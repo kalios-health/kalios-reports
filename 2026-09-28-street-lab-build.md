@@ -365,7 +365,7 @@ On the preview (`dpl_4HmUneLxQdzWxSxoqek46AMeQMdn`). The same paths will apply o
    - identity-workflow open questions 5–10
    - content-truth open questions 1 and 3–10 (read for context only, per the brief)
    - the Vercel author block (deploys still go through the git-less copy)
-   - Brave key rotation
+   - ~~Brave key rotation~~ **Closed 2026-09-27: G rotated the key.**
 
 ## Web content
 

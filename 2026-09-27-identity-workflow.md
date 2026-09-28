@@ -122,7 +122,7 @@ Checks:
 11. **Reports clone identity.** `~/kalios-reports` got repo-local identity Kalios. The script's own commits already force it, but a manual commit there would otherwise use the machine's global git identity.
 12. **First publish: 2 published, 3 held.**
     - Published: `overnight` and `content-truth`, after a full read. Both are clean of identity strings and secrets.
-    - Held: `ALERT-brave-key` and `workflow-closeout`. They describe an open security item in enough detail to help an attacker until it's closed. Publish them once it is (open question 2).
+    - Held: `ALERT-brave-key` and `workflow-closeout`. They describe an open security item in enough detail to help an attacker until it's closed. Publish them once it is (open question 2). **The item closed on 2026-09-27: G rotated the key.** Publishing the two is still G's call.
     - Held: `question-repo-visibility`. Its subject is the owner's identity exposure. It is scrubbed in the private repo but not needed publicly.
 13. **Orforglipron hook.** I chose the profile's Phase 3 language over "no number". It matches the profile's Gist and was confirmed against the primary paper. It carries "in Phase 3" as a qualifier.
 14. **Homepage FAQ.** It states 7 voted, 5 scheduled and none legal, and points to the tracker for vote counts. It does not restate vote outcomes, because FDA's meeting page (content current as of 08/06/2026) posts no vote summary to re-verify them against.
@@ -203,7 +203,7 @@ Checks:
    - (a) In Vercel → Account Settings → Authentication, connect the `kalios-health` GitHub login. This is the first thing to check.
    - (b) Connect the project to the GitHub repo. Note that pushes would then auto-deploy, which changes the workflow.
    - (c) Keep the git-less method, which works.
-2. **Held reports.** Once the open security item carried over from the last sessions is closed, publish the ALERT and workflow-closeout reports with `bash scripts/publish_report.sh reports/2026-09-27-ALERT-brave-key.md reports/2026-09-27-workflow-closeout.md`. Should the repo-visibility report ever be public? My default is no.
+2. **Held reports.** (**The security item closed on 2026-09-27: G rotated the key.**) Once the open security item carried over from the last sessions is closed, publish the ALERT and workflow-closeout reports with `bash scripts/publish_report.sh reports/2026-09-27-ALERT-brave-key.md reports/2026-09-27-workflow-closeout.md`. Should the repo-visibility report ever be public? My default is no.
 3. **Vercel team slug.** It is the personal handle and appears in every `*.vercel.app` deploy URL and dashboard link. Rename it to a brand slug? Until then, reports cite `dpl_…` IDs, and the denylist blocks the handle.
 4. **Housekeeping.**
    - Delete `~/kalios-backup/…bundle` when satisfied.

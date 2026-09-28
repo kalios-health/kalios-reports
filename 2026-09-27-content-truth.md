@@ -263,6 +263,6 @@ Parts 1–7 of the CONTENT TRUTH PASS brief are done, and the work is deployed t
 11. **Carried over, not addressed this session.**
     - Vercel author block: deploys from `~/kalios` are still BLOCKED. This deploy used the git-less copy again.
     - The GitHub repo moved to `kalios-health/kalios`, but `origin` still points at the old account URL. Pushes work through the redirect.
-    - Brave key rotation, repo visibility, and the GHK-Cu badge question are still open. GHK-Cu's page now says non-injectable Category 1, while regulatory-status.json still says PCAC 2027.
+    - Brave key rotation (**closed 2026-09-27: G rotated the key**), repo visibility, and the GHK-Cu badge question are still open. GHK-Cu's page now says non-injectable Category 1, while regulatory-status.json still says PCAC 2027.
     - Homebrew has 39 outdated formulae.
 12. **Minor data drift left alone.** For glumitide, data.json says "Investigational New Drug (Phase 1)" and the profile says "Investigational New Drug". It is not a list claim.

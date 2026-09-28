@@ -296,7 +296,7 @@ Rule: published human data on the compound itself, for the use on its tag. The f
    - GHK-Cu band wording (non-injectable GHK-Cu is back in Category 1).
    - The 503B question.
    - The Vercel author block: deploys still go through the git-less copy.
-   - Brave key rotation.
+   - ~~Brave key rotation.~~ **Closed 2026-09-27: G rotated the key.**
    - Identity-workflow open questions 5–10.
    - Content-truth open questions.
 
