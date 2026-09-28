@@ -208,7 +208,7 @@ Checks:
 4. **Housekeeping.**
    - Delete `~/kalios-backup/…bundle` when satisfied.
    - Optionally ask GitHub Support to garbage-collect the private repo, so pre-rewrite objects stop being reachable by SHA.
-   - The machine's *global* git identity still uses your personal name. `~/kalios` and `~/kalios-reports` override it locally, but any new repo would not.
+   - **Resolved after this report:** the machine's *global* git identity is now `Kalios <kaliospeptides@proton.me>` as well. No other scope or environment variable overrides it, so new repos inherit it.
 5. **Tracker, GHK-Cu route.** The FAQ and "What happens next" list say the 2027 PCAC review covers "GHK-Cu (noninjectable routes only)". FDA's May 14 list says FDA intends to consult the PCAC on "GHK-Cu", with no route given, and it put non-injectable GHK-Cu back in Category 1. This ties into the open GHK-Cu badge question.
 6. **"12 peptides" at the July meeting.** The tracker's dek, its JSON-LD `description` and `llms.txt` call the July 23–24 meeting a vote on (or review of) 12 peptides. It voted on 7. Suggested wording: "the PCAC review of 12 peptides (7 voted July 23–24, 2026)".
 7. **beginners-guide.** The sentence before the fixed one says most people get BPC-157, ipamorelin or sermorelin through a 503A pharmacy. BPC-157 and ipamorelin are not legal to compound under 503A today. Rewrite it?
