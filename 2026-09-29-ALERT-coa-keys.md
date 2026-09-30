@@ -1,6 +1,11 @@
-# ALERT for G — COA Check needs two keys before it can go live (~~both secrets~~ received; the site key is still needed)
+# ALERT for G — COA Check needs two keys before it can go live (site key received; **the production Turnstile secret is refused**)
 
-> **Status, noted 2026-09-29, later the same session.**
+> **Status, noted 2026-09-29 evening.**
+> - **Site key received and live.** Production was deployed (`dpl_68zpewARzoy34ffCXvtFBk4xhKzR`).
+> - **Cloudflare refuses the production `TURNSTILE_SECRET_KEY`** (`invalid-input-secret`), so every check fails closed with "COA Check is unavailable right now". There is no cost and no exposure, but the tool can't read anything yet.
+> - **To fix:** put the widget's **Secret Key** in the shared variable. The Secret Key is the longer key on the widget's page, not the site key `0x4AAAAAAFFQqvDJzq92La1U`. Then redeploy production, because env var changes only reach new deployments. Details are in `2026-09-29-coa-check.md`, item 1.
+
+> **Earlier status, same session.**
 > - **Received:** `ANTHROPIC_API_KEY` and `TURNSTILE_SECRET_KEY`, as team Shared Environment Variables for Preview and Production. Thank you.
 > - **Fixture gate:** passed on a preview. 8 of 8 reports gave a slip, and the invoice was refused. Checks cost 0.53–1.17¢ (average 0.70¢).
 > - **Still needed: the Turnstile *site key*.** It's public and starts `0x`. Without it, production can't pass Cloudflare's check, so production stays as it is today. Either paste it into `coa/index.html` in place of `TURNSTILE_SITE_KEY_PENDING` (the `<main>` tag, line 144) or give it to me. Production then takes one deploy and IndexNow; the session report lists the exact steps.
